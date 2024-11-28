@@ -11,7 +11,7 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 
 app.get("/", (req, res) => {
-  res.status(200).json({ message: "Welcome to the Tweet Quote API" })
+  res.status(200).json({ message: "Welcome. . ." })
 })
 
 app.use("/api/quotes", require("./routes/quoteRoutes"))

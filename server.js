@@ -14,7 +14,7 @@ app.get("/", (req, res) => {
   res.status(200).json({ message: "Welcome. . ." })
 })
 
-app.use("/api/quotes", require("./routes/quoteRoutes"))
+app.use("/api/tasks", require("./routes/taskRoutes"))
 
 app.use(errorHandler)
 
